@@ -1,0 +1,166 @@
+=>styling mobile view
+1. Using main is good practice
+2. link:css ->emmet for link html and css.
+3. article.className->  creats article tag with class.
+eg: 
+article=.product ---> <article class="product"></article>
+4. article is used for standalone content.
+5. we need two columns 
+->image  
+->content
+6. using picture tag for image.
+7. .className+tab emmet gives div tag with class.
+8. you cannot have multiple h1's on page.
+->Watch this video: https://youtu.be/NexL5_Vdoq8?si=VfDD9FnF6XOcwFPM
+9. give classes for each important tag.
+->give class names for unique elements.
+->for regular content no need of classes.
+10. using div for prices because they go together.
+->they have to be grouped together.
+11. Adding class to perfume word because it styled differently.
+12. Adding mobile version image.
+
+=>Css file
+13. start with a css reset
+->it resets default style.
+->make images and video responsive.
+check this link: https://www.joshwcomeau.com/css/custom-css-reset/
+
+14. use custom properties
+eg:
+:root{
+
+}
+
+15. take primary and secondary color.
+->Use hsl colors.
+->check this video out: https://joshwcomeau.com/courses/
+
+->switch to resposive mode
+->ctrl+shift+m in firefox
+->dev tools -> click on responsive icon.
+
+16. font weight
+/* <font-weight-absolute> keyword values */
+font-weight: normal;
+font-weight: bold;
+
+/* <font-weight-absolute> numeric values [1,1000] */
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400; /* normal */
+font-weight: 500;
+font-weight: 600;
+font-weight: 700; /* bold */
+font-weight: 800;
+font-weight: 900;
+
+/* Keyword values relative to the parent */
+font-weight: lighter;
+font-weight: bolder;
+
+/* Global values */
+font-weight: inherit;
+font-weight: initial;
+font-weight: revert;
+font-weight: revert-layer;
+font-weight: unset;
+
+17. add font weight and family from style guide.
+
+=>Styling content
+1. Styling body
+2. Styling Product Area
+->product content
+->product image
+
+18. styling body
+->use rem for font size.
+
+19. Using grid to place content at center.
+
+20. flex is used to style pricing
+->The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
+
+->The gap CSS shorthand property sets the gaps (gutters) between rows and columns.
+->overflow: hidden; will hide the excess content that goes beyond these boundaries.
+
+21. gap between content
+-> it is grid container so we can add gap.
+
+22. Any font is hiting 1.5, 2 or bigger then smaller line height is required
+eg:
+h1,h2,h3{
+    line-height: 1.1rem;
+}
+
+23. adjust sizes after styling using align-item:center;
+24. In order to cross tag we have to use s tag.
+->screen reader reads two price so we have to use reset
+->Use span and write original and current price.
+->Use reset for hide these things then screen reader will read it.
+
+24. styling buttons
+
+25. addig icon
+-> data-icon attribute to hold icon-related data for an element.
+->The ::before selector inserts something before the content of each selected element(s).
+
+Use the content property to specify the content to insert.
+
+->Use the ::after selector to insert something after the content.
+
+->if content is blank pseduo element will not be on page.
+->adding back ground images on pseudo element.
+
+ .button[data-icon="shopping-cart"]::before{
+    content: "";
+    background-image: url("images/icon-cart.svg"); 
+  
+    width:15px;
+    height:16px;
+    
+
+  }
+
+  =>14. The Desktop Version
+  ->adding display:grid in product.
+  ->adding media query for responsive web design.
+
+  ->In CSS, fr stands for "fractional unit" and it's used in Grid Layout.
+  ->When you set column or row sizes in a CSS Grid using the fr unit, you're defining a fraction of the available space.
+
+  ->Read about source set(srcset) ans source tag
+  In HTML, the <source> element is used within the <audio> and <video> elements to specify multiple media resources for browsers to choose from. This allows you to provide different versions of the same audio or video content in various formats, resolutions, or codecs to ensure compatibility across different browsers and devices.
+
+
+  15. Putting project in github
+  
+
+
+
+
+
+
+
+
+=>Emmets 
+1. article.className->  creats article tag with class.
+eg: 
+article=.product ---> <article class="product"></article>
+
+2. .className+tab emmet gives div tag with class.
+
+=>short cuts
+1. to wrap content with tag
+ctrl+shift+p ->emmet with abbreviation -> tag(tag to be used)
+eg:p ---> <p>$149.99</p>
+
+->for giving tag and class
+ctrl+shift+p ->emmet with abbreviation -> tag.className(tag to be used)
+eg: p.product_orignal-price ---> 
+<p class="product_original-price">$169.99<</p>
+
+
+
